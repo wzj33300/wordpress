@@ -9,8 +9,8 @@
 
 <channel>
 	<title>未分类 &#8211; Wzj33300&#039;s Blog</title>
-	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
-	<link></link>
+	<atom:link href="/wordpress/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>/wordpress</link>
 	<description>Wzj33300 的小窝</description>
 	<lastBuildDate>Sat, 03 Sep 2022 07:32:13 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -21,20 +21,20 @@
 	<generator>https://wordpress.org/?v=6.0.2</generator>
 	<item>
 		<title>世界，您好！</title>
-		<link>/2022/09/03/hello-world/</link>
-					<comments>/2022/09/03/hello-world/#comments</comments>
+		<link>/wordpress/2022/09/03/hello-world/</link>
+					<comments>/wordpress/2022/09/03/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[Wzj33300]]></dc:creator>
 		<pubDate>Sat, 03 Sep 2022 07:32:13 +0000</pubDate>
 				<category><![CDATA[未分类]]></category>
-		<guid isPermaLink="false">/?p=1</guid>
+		<guid isPermaLink="false">/wordpress/?p=1</guid>
 
 					<description><![CDATA[欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！]]></description>
 										<content:encoded><![CDATA[
 <p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2022/09/03/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>/wordpress/2022/09/03/hello-world/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
