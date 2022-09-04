@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="no-js toolbar-blur article-header-style-default ">
+<html lang="zh-CN" class="no-js immersion-color toolbar-blur article-header-style-default ">
 <head>
 	<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -62,7 +62,7 @@ img.emoji {
 			language: "zh_CN",
 			dateFormat: "YMD",
 							zoomify: false,
-						pangu: "false",
+						pangu: "article|shuoshuo|comment",
 							lazyload: {
 					threshold: 800,
 					effect: "fadeIn"
@@ -74,14 +74,14 @@ img.emoji {
 			headroom: "false",
 			waterflow_columns: "1",
 			code_highlight: {
-				enable: false,
+				enable: true,
 				hide_linenumber: false,
 				transparent_linenumber: false,
 				break_line: false			}
 		}
 	</script>
 	<script>
-		var darkmodeAutoSwitch = "false";
+		var darkmodeAutoSwitch = "time";
 		function setDarkmode(enable){
 			if (enable == true){
 				$("html").addClass("darkmode");
@@ -218,17 +218,21 @@ img.emoji {
 </li>
 
 										<li class="nav-item">
-											<a href="/wordpress/contact/" class="nav-link" target="" title="">
-										  		<i class="ni ni-book-bookmark d-lg-none"></i>
-												<span class="nav-link-inner--text">留言板</span>
-										  </a>
-</li>
-
-										<li class="nav-item">
 											<a href="/wordpress/archives/" class="nav-link" target="" title="">
 										  		<i class="ni ni-book-bookmark d-lg-none"></i>
 												<span class="nav-link-inner--text">归档</span>
 										  </a>
+</li>
+
+										<li class="nav-item dropdown">
+											<a class="nav-link" data-toggle="dropdown" no-pjax onclick="return false;" title="">
+										  		<i class="ni ni-book-bookmark d-lg-none"></i>
+												<span class="nav-link-inner--text">分类</span>
+										  </a>
+<div class="dropdown-menu">
+<a href="/wordpress/category/uncategorized/" class="dropdown-item" target="" title="">未分类</a>
+</div>
+
 </li>
 </ul>					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
 						<li id="navbar_search_container" class="nav-item" data-toggle="modal">
@@ -296,8 +300,33 @@ img.emoji {
 <span data-text="Wzj33300&#039;s Blog" class="banner-title-inner">&nbsp;</span>
 			</div>
 			</div>
+			<style>section.banner{
+				background-image: url(//bing.com/th?id=OHR.ArambolBeach_ZH-CN2149857876_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp) !important;
+			}</style>
 		</section>
 
+	<style>#banner, #banner .shape {
+				background: transparent !important;
+			}
+				#content:before {
+			content: '';
+			display: block;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -2;
+			background: url(https://www.dmoe.cc/random.php);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 0.5;
+			transition: opacity .5s ease;
+		}
+		html.darkmode #content:before{
+			filter: brightness(0.65);
+		}</style>
 
 
 <div id="float_action_buttons" class="float-action-buttons fabtns-unloaded">
@@ -385,7 +414,8 @@ img.emoji {
 			<div class="leftbar-banner card-body">
 				<span class="leftbar-banner-title text-white">Wzj33300&#039;s Blog</span>
 
-								
+													<span class="leftbar-banner-subtitle text-white"><span class="hitokoto"></span></span>
+				
 			</div>
 
 			<ul id="leftbar_part1_menu" class="leftbar-menu"></ul>			<div class="card-body text-center leftbar-search-button">
@@ -474,8 +504,7 @@ img.emoji {
 					<time title="发布于 2022-9-03 15:32:13 | 编辑于 2022-9-03 15:32:13">2022-9-03 15:32
 					</time>
 				</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-views">
-					<i class="fa fa-eye" aria-hidden="true"></i> 13</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
-					<i class="fa fa-comments-o" aria-hidden="true"></i> 1</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
+					<i class="fa fa-eye" aria-hidden="true"></i> 27</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
 				<i class="fa fa-bookmark-o" aria-hidden="true"></i> <a href="/wordpress/category/uncategorized/" target="_blank" class="post-meta-detail-catagory-link">未分类</a>
 </div>						<div class="post-meta-detail post-meta-detail-words">
 		<i class="fa fa-file-word-o" aria-hidden="true"></i><span> 31 字</span>
@@ -552,6 +581,7 @@ if (typeof(bottomTimeIntervalHasSet) == "undefined"){
 			</script>
 			<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" id="MathJax-script" async></script>
 						
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/solstice23/argon-theme@1.3.5/assets/vendor/highlight/styles/vs2015.css">
 		
 	
 
